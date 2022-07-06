@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spam Classifier</title>
+    <h1 style ="color: white; padding-top:20px; text-align:center;">Spam Classifier</h1>
+    <center><img src="../static/logo.png" alt="Spam Detector"></center><br><br>
+</head>
+<body style = "background-color: black;">
+    <form action="/" method="post" style="text-align:center;">
+        <textarea class="text-box" id="v2" name="v2" placeholder="Enter a message." onsubmit="return checkforblank()" style = "height:400px; width :600px;" ></textarea><br><br>
+        <input type="image"  src="../static/submit.png" alt = "Submit" style="width: 100px; height:100px;" ></button>
+    </form>
+{% if predictions == "Spam" %}
+<center><img src="../static/spam.png" alt="Spam Detector"></center>
+{% endif %}
+{% if predictions == "Not Spam" %}
+<center><img src="../static/not spam.png" alt="Spam Detector"></center>
+{% endif %}
+</body>    
