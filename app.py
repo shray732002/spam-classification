@@ -4,6 +4,7 @@ from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
 from flask import Flask,request,render_template
+rom nltk.tokenize.punkt import PunktSentenceTokenizer
 from sklearn.svm import SVC
 ps = PorterStemmer()
 
