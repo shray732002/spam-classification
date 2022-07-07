@@ -5,6 +5,7 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 from flask import Flask,request,render_template
 from nltk.tokenize.punkt import PunktSentenceTokenizer
+nltk.download('punkt)
 from sklearn.svm import SVC
 ps = PorterStemmer()
 
