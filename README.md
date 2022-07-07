@@ -12,7 +12,7 @@ In this project you will get to know about major topics like:-
 
 ### Steps from beginning(from making a model) to end(deploying it on heroku)
 
-* Make a conda environment :- conda create -m {env_name}
+* Make a conda environment :- conda create -n {env_name}
 * After creating environment you need to activate it :- conda activate {env_name}
 * try to download each and every library you need in your project
 * then use pip freeze command to collect name and version of libraries in your requirements.txt file pip freeze > requirements.txt
